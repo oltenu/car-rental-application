@@ -24,8 +24,17 @@ public abstract class Car {
         return horsePower;
     }
 
+    public int getPricePerHour(){
+        return pricePerHour;
+    }
+
+    public int getNumberOfKilometers(){
+        return numberOfKilometers;
+    }
+
     public void drive(int drivenKilometers){
         numberOfKilometers += drivenKilometers;
+        System.out.println(getBrandName() + "is driven!");
     }
 
     public boolean isAvailable() {
