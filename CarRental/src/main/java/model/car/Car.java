@@ -34,7 +34,7 @@ public abstract class Car {
 
     public void drive(int drivenKilometers){
         numberOfKilometers += drivenKilometers;
-        System.out.println(getBrandName() + "is driven!");
+        System.out.println(getBrandName() + " is driven!");
     }
 
     public boolean isAvailable() {

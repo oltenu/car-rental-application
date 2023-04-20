@@ -22,11 +22,7 @@ public class Person {
     }
 
     public void setRentedCar(Car car) {
-        if (this.rentedCar == null) {
-            this.rentedCar = car;
-        } else {
-            System.out.println(firstName + lastName + "already has a rented car!");
-        }
+        rentedCar = car;
     }
 
     public Car getRentedCar() {
