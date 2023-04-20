@@ -1,8 +1,8 @@
 package model.car;
 
-public class Dacia extends Car{
+public class Dacia extends Car {
 
-    public Dacia(){
+    public Dacia() {
         pricePerHour = 10;
         maxSpeed = 180;
         horsePower = 80;

@@ -2,6 +2,11 @@ package model.person;
 
 import model.car.Car;
 
+/***
+ *  I have implemented a Builder design pattern for all the fields contained in Person Class.
+ *  This pattern helps the user to easily instantiate a desired number of fields without needing to instantiate
+ * any other fields. It also makes the code cleaner because it eliminates declaration of multiple constructors.
+ */
 public class Person {
     private final String firstName;
     private final String lastName;
@@ -37,12 +42,12 @@ public class Person {
         this.money = money;
     }
 
-    public String getName(){
+    public String getName() {
         return firstName + " " + lastName;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Name: " + getName() + ", address: " + address + ", age: " + age + ", cnp: " + cnp;
     }
 

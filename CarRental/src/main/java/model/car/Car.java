@@ -7,7 +7,7 @@ public abstract class Car {
     protected int horsePower;
     protected boolean isAvailable;
 
-    public Car(){
+    public Car() {
         numberOfKilometers = 0;
         isAvailable = true;
     }
@@ -16,23 +16,23 @@ public abstract class Car {
 
     public abstract String getGroup();
 
-    public int getMaxSpeed(){
+    public int getMaxSpeed() {
         return maxSpeed;
     }
 
-    public int getHorsePower(){
+    public int getHorsePower() {
         return horsePower;
     }
 
-    public int getPricePerHour(){
+    public int getPricePerHour() {
         return pricePerHour;
     }
 
-    public int getNumberOfKilometers(){
+    public int getNumberOfKilometers() {
         return numberOfKilometers;
     }
 
-    public void drive(int drivenKilometers){
+    public void drive(int drivenKilometers) {
         numberOfKilometers += drivenKilometers;
         System.out.println(getBrandName() + " is driven!");
     }

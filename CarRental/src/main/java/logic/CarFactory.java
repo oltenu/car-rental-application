@@ -2,6 +2,12 @@ package logic;
 
 import model.car.*;
 
+/***
+ *  I have implemented a factory design pattern using Car abstract class as a superclass,
+ * then I defined 6 subclasses.
+ *  This class(CarFactory) is the factory class which helps the user to instantiate Car type
+ * objects using a String input.
+ */
 public class CarFactory {
     public static Car getCar(String brand){
         switch (brand) {

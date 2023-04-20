@@ -1,12 +1,13 @@
 package model.car;
 
-public class Volkswagen extends Car{
+public class Volkswagen extends Car {
 
-    public Volkswagen(){
+    public Volkswagen() {
         pricePerHour = 20;
         maxSpeed = 220;
         horsePower = 120;
     }
+
     @Override
     public String getBrandName() {
         return "Volkswagen";

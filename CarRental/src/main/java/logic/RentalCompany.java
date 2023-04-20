@@ -3,8 +3,7 @@ package logic;
 import model.car.Car;
 import model.person.Person;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class RentalCompany {
     List<Car> cars;
@@ -34,13 +33,13 @@ public class RentalCompany {
                             person.setRentedCar(car);
                             person.setMoney(person.getMoney() - car.getPricePerHour() * hours);
                             System.out.println(person.getName() + " has rented a " + car.getBrandName());
-                        }else{
+                        } else {
                             System.out.println(person.getName() + " has already rented a car!");
                         }
-                    }else{
+                    } else {
                         System.out.println(person.getName() + " doesn't have enough money!");
                     }
-                }else{
+                } else {
                     System.out.println(car.getBrandName() + " is not available!");
                 }
             }
